@@ -4,7 +4,7 @@ module.exports = {
     theme: {
       extend: {
         fontFamily: {
-            'custom': ['"Poppins"', 'sans-serif'],
+            'custom': ['"Manrope"', 'sans-serif'],
         },
       },
     },
