@@ -23,6 +23,7 @@
           extend: {
             colors: {
               clifford: "#da373d",
+              'login-pic': '#c3e7cf'
             },
           },
         },
@@ -30,7 +31,35 @@
     </script>
   </head>
   <body class="m-0 p-0 box-border">
-    <button class="btn btn-active btn-primary bg-black">Primary</button>
-    <h1 class="text-4xl">BCash</h1>
+    <section class="flex items-center justify-center gap-10 w-full h-[950px] p-32">
+      <div class="w-1/3 h-[600px] flex justify-center">
+        <div class="flex items-center justify-center w-4/5 flex-col gap-6">
+          <h1 class="text-4xl font-bold">Login</h1>
+          <form class="card-body w-full h-4/5 p-10 flex gap-6">
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text font-bold text-2xl">Email</span>
+              </label>
+              <input type="email" placeholder="email" class="input input-bordered" required />
+            </div>
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text font-bold text-2xl">Password</span>
+              </label>
+              <input type="password" placeholder="password" class="input input-bordered" required />
+              <label class="label">
+                <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+              </label>
+            </div>
+            <div class="form-control mt-6 flex justify-center items-center">
+              <button class="btn w-1/2 font-bold bg-login-pic text-black text-xl">Login</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="w-1/3 h-[600px]">
+        <img src="assests/login.png" alt="" class="w-full h-full bg-center bg-contain rounded-lg">
+      </div>
+    </section>    
   </body>
 </html>
