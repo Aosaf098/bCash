@@ -1,3 +1,5 @@
+// Login Button in the Login Page
+
 document.getElementById('login-btn').addEventListener('click', e => {
     e.preventDefault()
 
@@ -11,3 +13,15 @@ document.getElementById('login-btn').addEventListener('click', e => {
         alert('Email or Password is Invalid')
     }
 })
+
+
+// Add Money Button in the Home Page
+
+
+
+
+
+
+// Cash out Button in the Home Page
+
+
