@@ -1,11 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home | bCash</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              'login-pic': '#c3e7cf'
+            },
+          },
+        },
+      };
+    </script>
 </head>
-<body>
-    <h1>Home Page</h1>
+<body class="m-0 p-0 box-border">
+    <section class="bg-login-pic w-full h-[950px] flex items-center justify-center flex-col">
+        <img src="assests/login.png" alt="" class="w-[150px] -mt-28 lg:w-[200px]">
+        <div class="lg:w-1/2 w-[80%] h-[600px] bg-white rounded-xl mt-10">
+            <h1 class="text-3xl font-bold text-center mt-6">Total Balance</h1>
+            <div class="w-1/2 lg:w-1/4 mx-auto my-6 text-center py-4 text-2xl font-bold rounded-xl shadow-2xl">9000</div>
+            <div class="form-control mt-6 flex justify-center items-center flex-row gap-6 lg:gap-16">
+                <button id="login-btn" class="btn font-bold bg-login-pic text-black text-xl">Add Money</button>
+                <button id="login-btn" class="btn font-bold bg-login-pic text-black text-xl">Cash Out</button>
+            </div>
+            <div class="hidden">
+                <form class="card-body w-full lg:w-1/2 h-4/5 p-10 flex gap-6 lg:m-auto">
+                    <div class="form-control">
+                      <label class="label">
+                        <span class="label-text font-bold lg:text-2xl text-xl">Amount</span>
+                      </label>
+                      <input id="email-input" type="number" placeholder="Amount" class="input input-bordered" required />
+                    </div>
+                    <div class="form-control">
+                      <label class="label">
+                        <span class="label-text font-bold lg:text-2xl text-xl">Pin</span>
+                      </label>
+                      <input id="password-input" type="password" placeholder="pin" class="input input-bordered" required/>
+                    </div>
+                    <div class="form-control mt-6 flex justify-center items-center">
+                      <button id="login-btn" class="btn font-bold bg-login-pic text-black text-xl">Add Money</button>
+                    </div>
+                </form>
+            </div>
+            <div class="hidden">
+                <form class="card-body w-full lg:w-1/2 h-4/5 p-10 flex gap-6 lg:m-auto">
+                    <div class="form-control">
+                      <label class="label">
+                        <span class="label-text font-bold lg:text-2xl text-xl">Amount</span>
+                      </label>
+                      <input id="email-input" type="number" placeholder="Amount" class="input input-bordered" required />
+                    </div>
+                    <div class="form-control">
+                      <label class="label">
+                        <span class="label-text font-bold lg:text-2xl text-xl">Pin</span>
+                      </label>
+                      <input id="password-input" type="password" placeholder="pin" class="input input-bordered" required/>
+                    </div>
+                    <div class="form-control mt-6 flex justify-center items-center">
+                      <button id="login-btn" class="btn font-bold bg-login-pic text-black text-xl">Cash Out</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
