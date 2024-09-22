@@ -29,13 +29,14 @@
 </head>
 <body class="m-0 p-0 box-border">
     <section class="bg-login-pic w-full h-[950px] flex items-center justify-center flex-col">
-        <img src="assests/login.png" alt="" class="w-[150px] -mt-28 lg:w-[200px]">
-        <div class="lg:w-1/2 w-[80%] h-[600px] bg-white rounded-xl mt-10">
+        <img id="logo-img" src="assests/login.png" alt="" class="w-[150px] lg:-mt-96 lg:w-[200px] -mt-80">
+        <div class="lg:w-1/2 w-[80%] bg-white rounded-xl mt-2 pb-8">
             <h1 class="text-3xl font-bold text-center mt-6">Total Balance</h1>
             <div id="current-balance" class="w-1/2 lg:w-1/4 mx-auto my-6 text-center py-4 text-2xl font-bold rounded-xl shadow-2xl">9000</div>
-            <div class="form-control mt-6 flex justify-center items-center flex-row gap-6 lg:gap-16">
-                <button id="add-money-btn" class="btn font-bold bg-login-pic text-black text-xl">Add Money</button>
-                <button id="cash-out-btn" class="btn font-bold bg-login-pic text-black text-xl">Cash Out</button>
+            <div class="form-control mt-6 flex justify-center items-center flex-row gap-6 lg:gap-16 w-full mx-auto flex-wrap">
+                <button id="add-money-btn" class="btn font-bold bg-login-pic text-black text-lg lg:text-xl lg:w-[20%]">Add Money</button>
+                <button id="cash-out-btn" class="btn font-bold bg-login-pic text-black text-lg lg:text-xl lg:w-[20%]">Cash Out</button>
+                <button id="transaction-history-btn" class="btn font-bold bg-login-pic text-black text-lg lg:text-xl lg:w-[25%]">Transaction History</button>
             </div>
             <div id="add-money-input" class="hidden">
                 <form class="card-body w-full lg:w-1/2 h-4/5 p-10 flex gap-6 lg:m-auto">
@@ -75,8 +76,16 @@
                     </div>
                 </form>
             </div>
+            <div id="transaction-history-box" class="hidden">
+              <div class="mx-auto my-6 p-4">
+                <h3 class="text-2xl font-bold text-center">Transaction History</h3>
+                <div id="transaction-history-content" class="font-bold text-center my-4"></div>
+              </div>
+            </div>
         </div>
     </section>
     <script src="home.js"></script>
+    
+
 </body>
 </html>
